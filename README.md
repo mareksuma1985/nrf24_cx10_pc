@@ -22,7 +22,9 @@ Although I haven't tested it yet, I expect that this code is compatible with the
 
 This sketch was tested with Arduino version 1.6.7.  nRF24_multipro.ino is the top-level code.  
 
-The python script serial_test.py can be used to test the connection, although it's not really practical for flying.  
+The python script [serial_test.py](serial_test.py) can be used to test the connection, although it's not really practical for flying.
+
+File [xinput.cpp](XInput_test/xinput.cpp) allows user control the quadcopter with a gamepad using [XInput](https://github.com/MysteriousJ/Joystick-Input-Examples?tab=readme-ov-file#xinput). Run [build_xinput.bat](XInput_test/build_xinput.bat) to compile it.
 
 This code was developed as part of the [Teach your PC to Fly a Mini-Drone](http://www.makehardware.com/2016/04/24/teach-your-pc-to-fly-a-mini-drone/) project on [MakeHardware.com](www.makehardware.com).
 

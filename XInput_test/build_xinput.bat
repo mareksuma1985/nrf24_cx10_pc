@@ -1,0 +1,1 @@
+cl -D_WIN32_WINNT=0x0601 rs232.c xinput.cpp Xinput.lib /link /OUT:xinput.exe
