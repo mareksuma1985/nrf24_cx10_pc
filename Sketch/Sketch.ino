@@ -348,6 +348,11 @@ void loop()
         //Serial.println(inputString);
         // process string
 
+        // resets buttons
+    for (int aux_cnt = AUX1; aux_cnt <= AUX8; aux_cnt++) {
+      ppm[aux_cnt] = PPM_MID;
+    }
+
         strcpy(c, inputString.c_str());
         p = strtok_r(c,",",&i); // returns substring up to first "," delimiter
         ppm_cnt=0;

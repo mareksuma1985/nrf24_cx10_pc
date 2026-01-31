@@ -1,5 +1,4 @@
- This is a fork of the Multi-Protocol nRF24L01 Tx project
- from goebish on RCgroups / github
+ This is a fork of the Multi-Protocol nRF24L01 Tx project from goebish on RCgroups / [github](https://github.com/goebish/nrf24_multipro).
  This version accepts serial port strings and converts
  them to ppm commands which are then transmitted via
  the nRF24L01. 
@@ -18,7 +17,9 @@
  Up to 12 channel commands can be submitted. The channel order is defined
  by chan_order. The serial port here is running at 115200bps. 
 
- Python code in serial_test.py was written to generate the serial strings.  
+ The python script [serial_test.py](serial_test.py) can be used to test the connection, although it's not really practical for flying.
+
+ File [xinput.cpp](XInput_test/xinput.cpp) allows user control the quadcopter with a gamepad using [XInput](https://github.com/MysteriousJ/Joystick-Input-Examples?tab=readme-ov-file#xinput). Run [build_xinput.bat](XInput_test/build_xinput.bat) to compile it.
 
  Hardware used:
  This code was tested on the Arduino Uno and nRF24L01 module. 
